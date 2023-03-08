@@ -1,24 +1,20 @@
-# README
+# Stripe Parser
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Stripe Parser is a small project written on Ruby on Rails and used to fetch data from Stripe in the background.
 
-Things you may want to cover:
+## Requirements
 
-* Ruby version
+1. MySQL installed with `utf8mb4` charset and `utf8mb4_unicode_ci` collation configured
+2. Redis to store Sidekiq queue data
+3. Ruby 2.3.x or 2.4.x
 
-* System dependencies
+## Usage
 
-* Configuration
+1. Clone the repo: `git clone git@github.com:ingo4it/ruby-stripe-parser.git`
+2. Install dependencies: `cd ruby-stripe-parser && bundle install`
+3. Run sidekiq as a daemon: `bundle exec sidekiq -d -l log/sidekiq.log`
+4. Start data fetchers: `rails runner "SyncAllScheduler.call"`
 
-* Database creation
+## Logging
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+There is a separate log file for each worker available inside `stripe-parser/log/`
