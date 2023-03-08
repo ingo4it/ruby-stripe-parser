@@ -1,0 +1,195 @@
+
+{
+    "id": "evt_1B6IhVGeIPwANAtniI42vWvg",
+    "object": "event",
+    "api_version": "2014-10-07",
+    "created": 1506430933,
+    "data": {
+        "object": {
+          "id": "cus_BUMAHezKAaSjbN",
+          "object": "customer",
+          "account_balance": 0,
+          "created": 1506687554,
+          "currency": "usd",
+          "default_source": "card_1B7NScGeIPwANAtnCl9pMyCR",
+          "delinquent": false,
+          "description": "Matt2985 Tester",
+          "discount": null,
+          "email": "bwdh5@testing.com",
+          "livemode": false,
+          "metadata": {
+            "metro_name": "Tampa",
+            "customer_id": "728168",
+            "email": "bwdh5@testing.com",
+            "subscription_type": "month"
+          },
+          "shipping": null,
+          "sources": {
+            "object": "list",
+            "data": [
+              {
+                "id": "card_1B7NScGeIPwANAtnCl9pMyCR",
+                "object": "card",
+                "address_city": null,
+                "address_country": null,
+                "address_line1": null,
+                "address_line1_check": null,
+                "address_line2": null,
+                "address_state": null,
+                "address_zip": null,
+                "address_zip_check": null,
+                "brand": "MasterCard",
+                "country": "US",
+                "customer": "cus_BUMAHezKAaSjbN",
+                "cvc_check": null,
+                "dynamic_last4": null,
+                "exp_month": 8,
+                "exp_year": 2019,
+                "fingerprint": "xbXbQ4mhEA5t9j64",
+                "funding": "credit",
+                "last4": "4444",
+                "metadata": {
+                  "customer_id": "728168",
+                  "email": "bwdh5@testing.com",
+                  "metro_name": "Birmingham"
+                },
+                "name": null,
+                "tokenization_method": null
+              }
+            ],
+            "has_more": false,
+            "total_count": 1,
+            "url": "/v1/customers/cus_BUMAHezKAaSjbN/sources"
+          },
+          "subscriptions": {
+            "object": "list",
+            "data": [
+              {
+                "id": "sub_BUMBaf8VyKgwu4",
+                "object": "subscription",
+                "application_fee_percent": null,
+                "billing": "charge_automatically",
+                "cancel_at_period_end": false,
+                "canceled_at": null,
+                "created": 1506687560,
+                "current_period_end": 1509279560,
+                "current_period_start": 1506687560,
+                "customer": "cus_BUMAHezKAaSjbN",
+                "discount": null,
+                "ended_at": null,
+                "items": {
+                  "object": "list",
+                  "data": [
+                    {
+                      "id": "si_1B7NSeGeIPwANAtnEhDr2g0X",
+                      "object": "subscription_item",
+                      "created": 1506687560,
+                      "metadata": {
+                      },
+                      "plan": {
+                        "id": "GROCERY_MONTHLY",
+                        "object": "plan",
+                        "amount": 1499,
+                        "created": 1425650864,
+                        "currency": "usd",
+                        "interval": "month",
+                        "interval_count": 1,
+                        "livemode": false,
+                        "metadata": {
+                          "breakdown": "Recurring membership.",
+                          "description": "Cancel at any time!"
+                        },
+                        "name": "Monthly Membership",
+                        "statement_descriptor": null,
+                        "trial_period_days": null,
+                        "statement_description": null
+                      },
+                      "quantity": 1
+                    }
+                  ],
+                  "has_more": false,
+                  "total_count": 1,
+                  "url": "/v1/subscription_items?subscription=sub_BUMBaf8VyKgwu4"
+                },
+                "livemode": false,
+                "metadata": {
+                  "original_platform_source": "web_app"
+                },
+                "plan": {
+                  "id": "GROCERY_MONTHLY",
+                  "object": "plan",
+                  "amount": 1499,
+                  "created": 1425650864,
+                  "currency": "usd",
+                  "interval": "month",
+                  "interval_count": 1,
+                  "livemode": false,
+                  "metadata": {
+                    "breakdown": "Recurring membership.",
+                    "description": "Cancel at any time!"
+                  },
+                  "name": "Monthly Membership",
+                  "statement_descriptor": null,
+                  "trial_period_days": null,
+                  "statement_description": null
+                },
+                "quantity": 1,
+                "start": 1506687560,
+                "status": "active",
+                "tax_percent": null,
+                "trial_end": null,
+                "trial_start": null
+              }
+            ],
+            "has_more": false,
+            "total_count": 1,
+            "url": "/v1/customers/cus_BUMAHezKAaSjbN/subscriptions"
+          },
+          "cards": {
+            "object": "list",
+            "data": [
+              {
+                "id": "card_1B7NScGeIPwANAtnCl9pMyCR",
+                "object": "card",
+                "address_city": null,
+                "address_country": null,
+                "address_line1": null,
+                "address_line1_check": null,
+                "address_line2": null,
+                "address_state": null,
+                "address_zip": null,
+                "address_zip_check": null,
+                "brand": "MasterCard",
+                "country": "US",
+                "customer": "cus_BUMAHezKAaSjbN",
+                "cvc_check": null,
+                "dynamic_last4": null,
+                "exp_month": 8,
+                "exp_year": 2019,
+                "fingerprint": "xbXbQ4mhEA5t9j64",
+                "funding": "credit",
+                "last4": "4444",
+                "metadata": {
+                  "customer_id": "728168",
+                  "email": "bwdh5@testing.com",
+                  "metro_name": "Birmingham"
+                },
+                "name": null,
+                "tokenization_method": null
+              }
+            ],
+            "has_more": false,
+            "total_count": 1,
+            "url": "/v1/customers/cus_BUMAHezKAaSjbN/cards"
+          },
+          "default_card": "card_1B7NScGeIPwANAtnCl9pMyCR"
+        },
+        "previous_attributes": {
+            "status": "active"
+        }
+    },
+    "livemode": true,
+    "pending_webhooks": 5,
+    "request": null,
+    "type": "customer.created"
+}
