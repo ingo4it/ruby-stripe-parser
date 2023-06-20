@@ -1,4 +1,3 @@
-
 class CustomerEventHandler < EventHandler
   def initialize(event)
     @event = event

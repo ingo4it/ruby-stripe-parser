@@ -1,4 +1,3 @@
-
 FROM mysql:latest 
 
     image: mysql:latest

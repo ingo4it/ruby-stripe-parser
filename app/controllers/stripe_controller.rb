@@ -1,4 +1,3 @@
-
 class StripeController < ApplicationController
   def webhook
     payload = request.raw_post

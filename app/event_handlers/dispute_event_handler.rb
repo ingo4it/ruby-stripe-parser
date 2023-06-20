@@ -1,4 +1,3 @@
-
 class DisputeEventHandler < EventHandler
   def initialize(event)
     @event = event

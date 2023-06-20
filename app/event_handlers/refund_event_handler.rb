@@ -1,4 +1,3 @@
-
 class RefundEventHandler < EventHandler
   def initialize(event)
     @event = event

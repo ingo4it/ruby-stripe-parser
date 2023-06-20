@@ -1,0 +1,27 @@
+service: mercury
+env: flex
+runtime: custom
+
+beta_settings:
+  cloud_sql_instances: stripeparser:us-central1:stripeparser-db
+
+resources:
+  cpu: 1
+  memory_gb: 1.75
+
+health_check:
+  enable_health_check: False
+
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 1
+  cool_down_period_sec: 60 # default value
+  cpu_utilization:
+    target_utilization: 0.7
+
+env_variables:
+  SECRET_KEY_BASE: xxx
+  MYSQL_USER: shipt_user
+  MYSQL_PASSWORD: xxx
+  MYSQL_DATABASE: shipt
+  MYSQL_SOCKET_PATH: /cloudsql/stripeparser:us-central1:stripeparser-db

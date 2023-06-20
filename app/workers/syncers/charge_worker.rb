@@ -1,4 +1,3 @@
-
 module Syncers
   class ChargeWorker
     include Sidekiq::Worker

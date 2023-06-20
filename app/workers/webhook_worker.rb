@@ -1,4 +1,3 @@
-
 class WebhookWorker
   include Sidekiq::Worker
   sidekiq_options queue: 'webhook'
@@ -9,4 +8,3 @@ class WebhookWorker
     ).send(method_name)
   end
 end
-
