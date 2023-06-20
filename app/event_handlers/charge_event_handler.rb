@@ -1,4 +1,3 @@
-
 class ChargeEventHandler < EventHandler
   def initialize(event)
     @event = event

@@ -1,4 +1,3 @@
-
 module StripeData
   class FeeDetail < ApplicationRecord
     self.table_name_prefix = 'stripe_'

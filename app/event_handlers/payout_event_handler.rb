@@ -1,4 +1,3 @@
-
 class PayoutEventHandler < EventHandler
   def initialize(event)
     @event = event

@@ -1,0 +1,43 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=stripe-parser
+    ports:
+      - '5432:5432'
+  redis:
+    image: redis:latest
+    ports:
+      - '6379:6379'
+  app:
+    image: stripe-parser:latest
+    volumes:
+      - .:/usr/src/app
+    entrypoint: rails runner "SyncAllScheduler.call"
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+      - redis
+      - sidekiq
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - DATABASE_URL=db://mysql:5432
+      - RAILS_ENV=development
+  sidekiq:
+    image: stripe-parser:latest
+    volumes:
+      - .:/usr/src/app
+    command: bundle exec sidekiq -d -l log/sidekiq.log
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+      - redis
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - DATABASE_URL=db://mysql:5432
+      - RAILS_ENV=development

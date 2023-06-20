@@ -1,4 +1,3 @@
-
 module Syncers
   class RefundWorker
     include Sidekiq::Worker

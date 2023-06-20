@@ -1,4 +1,3 @@
-
 module Syncers
   class CustomerWorker
     include Sidekiq::Worker

@@ -1,4 +1,3 @@
-
 module Syncers
   class PayoutWorker
     include Sidekiq::Worker

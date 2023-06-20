@@ -1,4 +1,3 @@
-
 module Syncers
   class TransferWorker
     include Sidekiq::Worker
