@@ -1,4 +1,3 @@
-
 module Syncers
   class BalanceTransactionWorker
     include Sidekiq::Worker

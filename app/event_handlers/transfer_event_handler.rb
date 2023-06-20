@@ -1,4 +1,3 @@
-
 class TransferEventHandler < EventHandler
   def initialize(event)
     @event = event

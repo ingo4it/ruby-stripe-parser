@@ -1,4 +1,3 @@
-
 module Syncers
   class EventWorker
     include Sidekiq::Worker

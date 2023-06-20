@@ -17,4 +17,4 @@ Stripe Parser is a small project written on Ruby on Rails and used to fetch data
 
 ## Logging
 
-There is a separate log file for each worker available inside `stripe-parser/log/`
+There is a separate log file for each worker available inside `ruby-stripe-parser/log/`

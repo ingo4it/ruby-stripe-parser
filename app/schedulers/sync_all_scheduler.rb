@@ -1,4 +1,3 @@
-
 module SyncAllScheduler
   def self.call
     ChargeScheduler.call
